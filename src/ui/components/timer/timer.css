@@ -1,0 +1,65 @@
+.timer-holder {
+  width: 824.5px;
+  max-width: 1080px;
+  position: relative;
+}
+.character {
+  position: absolute;
+  top: 4%;
+  transition: left 1s linear;
+  z-index: 5;
+  transform: scaleX(-1);
+}
+.ring {
+  height: 200px;
+  border-radius: 999px;
+}
+.floating-container {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+.floating-image {
+  animation: float 3s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+.shadow {
+  position: absolute;
+  z-index: 0;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.884);
+  border-radius: 50%;
+  animation: shadow 3s ease-in-out infinite;
+}
+.ground-holder{
+  overflow: hidden;
+}
+.ground{
+  width: 125%;
+  height: 550px;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes shadow {
+  0%,
+  100% {
+    width: 50%;
+    opacity: 0.2;
+  }
+  50% {
+    width: 60px;
+    opacity: 0.1;
+  }
+}

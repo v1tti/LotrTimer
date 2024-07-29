@@ -1,0 +1,19 @@
+.container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(77, 72, 72);
+}
+body {
+  margin: 0;
+  font-family: "MyFont", sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets/fonts/RingbearerMedium-51mgZ.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
