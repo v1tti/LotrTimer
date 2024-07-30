@@ -5,7 +5,7 @@
   gap: 2rem;
   background-color: #4d4848;
 }
-::-webkit-scrollbar:horizontal {
+::-webkit-scrollbar {
   display: none;
 }
 header {
